@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "es6",
+    "target": "es6",
+    "strict": true,
+    "sourceMap": true,
+    "outDir": "build",
+    "lib": [
+      "DOM",
+      "ES6"
+    ]
+  },
+  "files": ["index.ts"]
+}

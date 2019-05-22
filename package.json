@@ -4,7 +4,9 @@
   "description": "A browser extension to view sketch files in github",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "format": "prettier --write './!(build)/**/*.{ts,js,json}' './*.{ts,js,json}'"
   },
   "repository": {
     "type": "git",
@@ -21,8 +23,20 @@
   },
   "homepage": "https://github.com/jvanbruegge/sketch-preview#readme",
   "devDependencies": {
+    "@types/cookiejar": "^2.1.1",
+    "@types/jszip": "^3.1.6",
+    "@types/node": "^12.0.2",
+    "@types/superagent": "^4.1.1",
+    "awesome-typescript-loader": "^5.2.1",
     "husky": "^2.3.0",
     "lint-staged": "^8.1.7",
-    "prettier": "^1.17.1"
+    "prettier": "^1.17.1",
+    "typescript": "^3.4.5",
+    "webpack": "^4.32.1",
+    "webpack-cli": "^3.3.2"
+  },
+  "dependencies": {
+    "jszip": "^3.2.1",
+    "superagent": "^5.0.5"
   }
 }

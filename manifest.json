@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "sketch-preview",
+  "version": "1.0",
+  "description": "A browser extension to view sketch files in github",
+  "content_scripts": [
+    {
+      "matches": ["*://*.github.com/*"],
+      "js": ["index.js"]
+    }
+  ]
+}

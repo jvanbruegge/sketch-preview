@@ -1,0 +1,28 @@
+{
+  "name": "sketch-preview",
+  "version": "1.0.0",
+  "description": "A browser extension to view sketch files in github",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jvanbruegge/sketch-preview.git"
+  },
+  "keywords": [
+    "github",
+    "sketch"
+  ],
+  "author": "Jan van Brügge",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/jvanbruegge/sketch-preview/issues"
+  },
+  "homepage": "https://github.com/jvanbruegge/sketch-preview#readme",
+  "devDependencies": {
+    "husky": "^2.3.0",
+    "lint-staged": "^8.1.7",
+    "prettier": "^1.17.1"
+  }
+}

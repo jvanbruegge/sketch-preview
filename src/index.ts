@@ -1,3 +1,5 @@
+import { ImageData } from './background';
+import { fromByteArray } from 'base64-js';
 
 const files = Array.from(
     document.querySelectorAll('.file-header[data-file-type=".sketch"]')
@@ -10,14 +12,15 @@ const files = Array.from(
     )
     .forEach(url => {
         console.log(`fetching ${url}`);
-        const div = document.querySelector('.data.highlight.empty');
+        const div = document.querySelector('.data.highlight.empty') as HTMLDivElement;
         div.innerText = "Loading preview...";
         chrome.runtime.sendMessage(url, displayZip);
     });
 
 
-function displayZip(zip: any): void {
-    const div = document.querySelector('.data.highlight.empty');
-    div.innerHTML = `<img src="${zip}"></img>`;
-    div.style["overflow-x"] = "auto";
+function displayZip(previewData: ImageData): void {
+    const preview = new Uint8Array(previewData.data);
+    const div = document.querySelector('.data.highlight.empty') as HTMLDivElement;
+    div.innerHTML = `<img src="data:image/png;base64,${fromByteArray(preview)}"></img>`;
+    div.style.overflowX = "auto";
 }

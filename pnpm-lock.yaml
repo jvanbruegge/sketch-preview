@@ -1,8 +1,13 @@
 dependencies:
+  base64-js: 1.3.0
   jszip: 3.2.1
   superagent: 5.0.5
 devDependencies:
+  '@types/base64-js': 1.2.5
+  '@types/chrome': 0.0.86
   '@types/cookiejar': 2.1.1
+  '@types/filesystem': 0.0.29
+  '@types/filewriter': 0.0.28
   '@types/jszip': 3.1.6
   '@types/node': 12.0.2
   '@types/superagent': 4.1.1
@@ -29,10 +34,30 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-MI4Xx6LHs4Webyvi6EbspgyAb4D2Q2VtnCQ1blOJcoLS6mVa8lNN2rkIy1CVxfTUpoyIbCTkXES1rLXztFD1lg==
+  /@types/base64-js/1.2.5:
+    dev: true
+    resolution:
+      integrity: sha1-WCskdhaabLpGCiFNR2x0REHYc9U=
+  /@types/chrome/0.0.86:
+    dependencies:
+      '@types/filesystem': 0.0.29
+    dev: true
+    resolution:
+      integrity: sha512-7ehebPf/5IR64SYdD2Vig0q0oUCNbWMQ29kASlNJaHVVtA5/J/DnrxnYVPCID70o7LgHdYsav6I4/XdqAxjTLQ==
   /@types/cookiejar/2.1.1:
     dev: true
     resolution:
       integrity: sha512-aRnpPa7ysx3aNW60hTiCtLHlQaIFsXFCgQlpakNgDNVFzbtusSY8PwjAQgRWfSk0ekNoBjO51eQRB6upA9uuyw==
+  /@types/filesystem/0.0.29:
+    dependencies:
+      '@types/filewriter': 0.0.28
+    dev: true
+    resolution:
+      integrity: sha512-85/1KfRedmfPGsbK8YzeaQUyV1FQAvMPMTuWFQ5EkLd2w7szhNO96bk3Rh/SKmOfd9co2rCLf0Voy4o7ECBOvw==
+  /@types/filewriter/0.0.28:
+    dev: true
+    resolution:
+      integrity: sha1-wFTor02d11205jq8dviFFocU1LM=
   /@types/jszip/3.1.6:
     dependencies:
       '@types/node': 12.0.2
@@ -399,7 +424,6 @@ packages:
     resolution:
       integrity: sha512-5T6P4xPgpp0YDFvSWwEZ4NoE3aM4QBQXDzmVbraCkFj8zHM+mba8SyqB5DbZWyR7mYHo6Y7BdQo3MoA4m0TeQg==
   /base64-js/1.3.0:
-    dev: true
     resolution:
       integrity: sha512-ccav/yGvoa80BQDljCxsmmQ3Xvx60/UpBIij5QN21W3wBi/hhIC9OoO+KLpu9IJTS9j4DRVJ3aDDF9cMSoa2lw==
   /big.js/5.2.2:
@@ -3726,11 +3750,16 @@ packages:
     resolution:
       integrity: sha512-v1yFnE4+u9za42gG/b/081E7uNW9mUj3qtkmelLbW5YPROZzSH/KUUyJu9Wt8vxFJcT9otL/eZopS0YK1L5yPQ==
 specifiers:
+  '@types/base64-js': ^1.2.5
+  '@types/chrome': ^0.0.86
   '@types/cookiejar': ^2.1.1
+  '@types/filesystem': ^0.0.29
+  '@types/filewriter': ^0.0.28
   '@types/jszip': ^3.1.6
   '@types/node': ^12.0.2
   '@types/superagent': ^4.1.1
   awesome-typescript-loader: ^5.2.1
+  base64-js: ^1.3.0
   husky: ^2.3.0
   jszip: ^3.2.1
   lint-staged: ^8.1.7

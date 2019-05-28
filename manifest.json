@@ -5,7 +5,7 @@
   "description": "A browser extension to view sketch files in github",
   "background": {
     "scripts": ["build/background.js"],
-    "persistent": true
+    "persistent": false
   },
   "content_scripts": [
     {

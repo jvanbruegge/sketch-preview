@@ -10,10 +10,14 @@ const files = Array.from(
     )
     .forEach(url => {
         console.log(`fetching ${url}`);
+        const div = document.querySelector('.data.highlight.empty');
+        div.innerText = "Loading preview...";
         chrome.runtime.sendMessage(url, displayZip);
     });
 
 
 function displayZip(zip: any): void {
-    console.log(zip);
+    const div = document.querySelector('.data.highlight.empty');
+    div.innerHTML = `<img src="${zip}"></img>`;
+    div.style["overflow-x"] = "auto";
 }

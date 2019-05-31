@@ -9,7 +9,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://github.com/*/pull/*/files"],
+      "matches": ["*://github.com/*"],
       "js": ["build/content.js"]
     }
   ],

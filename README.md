@@ -1,6 +1,6 @@
 # sketch-preview
 
-This is a browser plugin (currently only chrome, but firefox support coming soon) to view `.sketch` files on github directly in the browser. Later I will also add visual diffing of those files in pull requests, so you can see what changed in the design directly in the github UI.
+This is a browser plugin (currently only Chrome, but Firefox support coming soon) to view `.sketch` files on GitHub directly in the browser. Later I will also add visual diffing of those files in pull requests, so you can see what changed in the design directly in the GitHub UI.
 
 Current demo:
 ![](./demo.gif)
@@ -8,9 +8,9 @@ Current demo:
 
 ## Using the extension
 
-As song as I am adding features I will not add it to the chrome web store. So for now you can build and use it yourself:
+As long as I am adding features I will not add it to the Chrome web store. So for now you can build and use it yourself:
 
-1. Install `pnpm`, the built might work with `npm` too, but I cannot guarantee this.
+1. Install `pnpm`, the build might work with `npm` too, but I cannot guarantee this.
 2. Run `pnpm install`
 3. Run `pnpm run build`
 4. Go to chrome://extensions and enable developer mode

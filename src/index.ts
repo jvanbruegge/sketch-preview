@@ -25,8 +25,6 @@ function checkForSketchFiles(): void {
                 console.log(`fetching ${url}`);
                 div.innerText = "Loading preview...";
                 chrome.runtime.sendMessage(url, displayZip);
-            } else {
-                console.log("skipped update");
             }
         });
 }

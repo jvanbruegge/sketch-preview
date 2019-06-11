@@ -13,10 +13,14 @@ As long as I am adding features I will not add it to the Chrome web store. So fo
 1. Install `pnpm`, the build might work with `npm` too, but I cannot guarantee this.
 2. Run `pnpm install`
 3. Run `pnpm run build`
-4. Go to chrome://extensions and enable developer mode
-5. Click on "Load unpacked" and choose this directory
-6. You are done
 
+For Chrome:
+1. Go to chrome://extensions and enable developer mode
+2. Click on "Load unpacked" and choose this directory
+
+For Firefox:
+1. Go to about:debugging#addons
+2. Click on "Load temporary addon" and choose "manifest.json" in this directory
 
 ## Acknowledgements
 

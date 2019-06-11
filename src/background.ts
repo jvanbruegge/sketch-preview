@@ -8,7 +8,7 @@ export type ImageData = { data: number[]; }
 function readSketch(url: string, respond: (a: ImageData) => void): void {
     console.log("fetching " + url);
     superagent
-        .get(url)
+        .get(url.indexOf("?") !== -1 ? url + `&${Math.random()}` : `?${Math.random()}`)
         .accept("application/octet-stream")
         .responseType("arraybuffer")
         .then((res: any) => zip.loadAsync(res.body))

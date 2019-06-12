@@ -44,7 +44,7 @@ function displayZip(previewData: ImageData): void {
     }
 }
 
-function getPreviewDiv(): HTMLDivElement {
+export function getPreviewDiv(): HTMLDivElement {
     const div = document.querySelector('.data.highlight.empty') as HTMLDivElement;
     if(!div) {
         return document.querySelector('[itemprop="text"].data') as HTMLDivElement;

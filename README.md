@@ -2,11 +2,15 @@
 
 This is a browser plugin (currently only Chrome, but Firefox support coming soon) to view `.sketch` files on GitHub directly in the browser. Later I will also add visual diffing of those files in pull requests, so you can see what changed in the design directly in the GitHub UI.
 
-Current demo:
+## Install the extension
+
+Firefox: You can install it directly from the [Addon Store](https://addons.mozilla.org/en-US/firefox/addon/sketch-preview/)
+
+## Demo
+
 ![](./demo.gif)
 
-
-## Using the extension
+## Developing the extension
 
 As long as I am adding features I will not add it to the Chrome web store. So for now you can build and use it yourself:
 

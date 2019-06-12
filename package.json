@@ -21,6 +21,9 @@
   "bugs": {
     "url": "https://github.com/jvanbruegge/sketch-preview/issues"
   },
+  "prettier": {
+    "singleQuote": true
+  },
   "homepage": "https://github.com/jvanbruegge/sketch-preview#readme",
   "devDependencies": {
     "@types/base64-js": "^1.2.5",

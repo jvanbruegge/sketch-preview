@@ -13,7 +13,5 @@
       "js": ["build/content.js"]
     }
   ],
-  "permissions": [
-    "*://*.github.com/"
-  ]
+  "permissions": ["*://*.github.com/"]
 }

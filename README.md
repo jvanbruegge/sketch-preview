@@ -5,6 +5,7 @@ This is a browser plugin (currently only Chrome, but Firefox support coming soon
 ## Install the extension
 
 Firefox: You can install it directly from the [Addon Store](https://addons.mozilla.org/en-US/firefox/addon/sketch-preview/)
+Chrome: You can find it in the [Chrome web store](https://chrome.google.com/webstore/detail/sketch-preview/dnggldceandgpmohpplipbhnhdhaiehp)
 
 ## Demo
 
